@@ -34,4 +34,4 @@ For customization(color):
 Points to remember:
 1. Specifying bundle identifier(found in Target->General->Bundle Identifier)  in the Customization.setBundle() is necessary
 2. Cloud Recognition will not work without internet connection
-3. If there is a problem while loading a non http url through meta data , add : - “NSAppTransportSecurity”  and  “NSAllowsArbitraryLoads” in the info.plist 
+3. To load a non-https url through meta data , add : - “NSAppTransportSecurity”  and  “NSAllowsArbitraryLoads” in the info.plist 
