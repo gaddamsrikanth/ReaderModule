@@ -23,6 +23,12 @@ make it root view controller in AppDelegate.
 10. Please make sure that you have set proper provision profile and bundle identifier , if that fails the module will not work.
 11. Add “NSCameraUsageDescription” property in the info.plist file for camera access or else the app will crash.
 
+To change database access-keys:
+   - Open "CloudRecoViewController.mm" and change the following lines containing "kAccessKey" and "kSecretKey".
+
+To change the liscense-key:
+   - Open "SampleApplicationSession.mm" and change the key in the line containing "mVuforiaInitFlags" keyword. 
+   
 For label changes:
 1. Open the localizable.strings file.
 2. Change the corresponding label strings in both the files.
