@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  Framework
+
+  Created by Developer88 on 7/25/17.
+  Copyright © 2017 Developer88. All rights reserved.
+*/
+"AD_READER" = "הקורא של המודעה של מרכז הבית";
+
+"MANUAL:" = "הוראות שימוש:";
+"INSTRUCTION" = "כוונו את המצלמה לעבר תמונה של מוצר במודעות הום סנטר המודפסות וקבלו מידע  מפורט יותר, תמונות נוספות ואף סרטוני וידיאו על המוצר.";
+"START" = "התחל";
+"POINT_CAM" = "הצבע על מצלמה במודעה שמופיעה במודעה";
+
