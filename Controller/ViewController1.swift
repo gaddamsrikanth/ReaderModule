@@ -62,19 +62,19 @@ public class ViewController1: UIViewController{
     }
     
     @IBAction func openImagescan(_ sender: Any) {
-        let vc = scanImageController(nibName: "scanImageController", bundle: Customization.bundle)
+        let vc = scanImageController(nibName: "scanImageController", bundle: Customization.bundle!)
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
     func localization() -> Void {
-        btnScan.setTitle(NSLocalizedString("START", tableName: nil , bundle: Customization.bundle, value: "", comment: ""), for: .normal)
+        btnScan.setTitle(NSLocalizedString("START", tableName: nil , bundle: Customization.bundle!, value: "", comment: ""), for: .normal)
         
-        lbladReaderHome.text = NSLocalizedString("AD_READER", tableName: nil , bundle: Customization.bundle, value: "", comment: "")
+        lbladReaderHome.text = NSLocalizedString("AD_READER", tableName: nil , bundle: Customization.bundle!, value: "", comment: "")
         
         
-        lblusrManual.text = NSLocalizedString("MANUAL:", tableName: nil , bundle: Customization.bundle, value: "", comment: "")
+        lblusrManual.text = NSLocalizedString("MANUAL:", tableName: nil , bundle: Customization.bundle!, value: "", comment: "")
         
-        lblInstruction.text = NSLocalizedString("INSTRUCTION", tableName: nil , bundle: Customization.bundle, value: "", comment: "")
+        lblInstruction.text = NSLocalizedString("INSTRUCTION", tableName: nil , bundle: Customization.bundle!, value: "", comment: "")
     }
     
     func resizeImage(image: UIImage, newHeight: CGFloat) -> UIImage {
