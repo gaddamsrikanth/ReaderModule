@@ -22,8 +22,8 @@
 #import "PresentMenuSegue.h"
 #import "SampleAppMenuViewController.h"
 
-static const char* const kAccessKey = "49665e5de3b142cda14e53fcb799b948bd8fc4eb";
-static const char* const kSecretKey = "6ba7198ae4b37a5a0c59a2dfb065d68e77dff5ba";
+static const char* const kAccessKey = "Access key";
+static const char* const kSecretKey = "Secret key";
 
 
 @interface CloudRecoViewController ()

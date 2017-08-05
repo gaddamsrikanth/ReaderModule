@@ -121,7 +121,7 @@ namespace {
 {
     // Background thread must have its own autorelease pool
     @autoreleasepool {
-        Vuforia::setInitParameters(mVuforiaInitFlags,"AXShI5T/////AAAAGZZ/pSs7d03Wkeozvnk0FcY6WDZpTl7XBgd0+XjDqb5pwjElrWfGV9pz7LUBWHBXozLDdpUFPmdirNe2dViccjLCv7qoTgZvA4ZxxeFhonR/7f33zAGsZ+nzHCLocxJet77GYSqFDCp4BkI2LOysn3vvw7UBXizUTV/ahcFK7lw34QbNLVGj4Itcty7v6xGcvyUsREigFyhlv85pVs3gCVKiAOb3nqt+a9Q5gHe4N3rAtDw9KiSYiJIAwT0NPIrJ3hiB58o0tM2gIeL0QkWPB6beMnP9/pvDFS/2kpOUHyK87SsE/0zwlyHoHKe05gx3Z6iPkmEOSqGBR/EwaHjuRGj3bGHrch9+9UoQp9vP+75x");
+        Vuforia::setInitParameters(mVuforiaInitFlags,"Insert key here");
         
         // Vuforia::init() will return positive numbers up to 100 as it progresses
         // towards success.  Negative numbers indicate error conditions
