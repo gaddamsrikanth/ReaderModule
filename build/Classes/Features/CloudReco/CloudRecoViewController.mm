@@ -437,7 +437,8 @@ static const char* const kSecretKey = "Secret key";
         // by default, we try to set the continuous auto focus mode
         // and we update menu to reflect the state of continuous auto-focus
         continuousAutofocusEnabled = Vuforia::CameraDevice::getInstance().setFocusMode(Vuforia::CameraDevice::FOCUS_MODE_CONTINUOUSAUTO);
-        
+        [self scanlineStart];
+
     } else {
         NSLog(@"Error initializing AR:%@", [initError description]);
         
@@ -586,14 +587,12 @@ static const char* const kSecretKey = "Secret key";
     if (visualSearchOn == NO)
     {
         NSLog(@"Starting target finder");
-//        [self scanlineStart];
         targetFinder->startRecognition();
         isVisualSearchOn = YES;
     }
     else
     {
         NSLog(@"Stopping target finder");
-//        [self scanlineStop];
         targetFinder->stop();
         isVisualSearchOn = NO;
     }
@@ -671,7 +670,7 @@ const int VIEW_SCAN_LINE_TAG = 1111;
 - (void) scanlineCreate {
     CGRect frame = [[UIScreen mainScreen] bounds];
     
-    UIImageView *scanLineView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, 50)];
+    UIImageView *scanLineView = [[UIImageView alloc] initWithFrame:CGRectMake(0, -20, frame.size.width - 70, 50)];
     scanLineView.tag = VIEW_SCAN_LINE_TAG;
     scanLineView.contentMode = UIViewContentModeScaleToFill;
     [scanLineView setImage:[UIImage imageNamed:@"scanline.png"]];
@@ -688,7 +687,7 @@ const int VIEW_SCAN_LINE_TAG = 1111;
         CABasicAnimation *animation = [CABasicAnimation
                                        animationWithKeyPath:@"position"];
         
-        animation.toValue = [NSValue valueWithCGPoint:CGPointMake(scanLineView.center.x, frame.size.height)];
+        animation.toValue = [NSValue valueWithCGPoint:CGPointMake(scanLineView.center.x, frame.size.height - 250)];
         animation.autoreverses = YES;
         animation.duration = 4.0;
         animation.repeatCount = HUGE_VAL;
