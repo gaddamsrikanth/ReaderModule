@@ -7,17 +7,7 @@ Steps for reader module integration:
 6. Make sure you specify the proper path of bridging header in build settings.
 7. Set “Enable Bitcode” option as No in build settings.
 8. Add the following frameworks(Target->General->Linked frameworks and libraries):- 
-   - SystemConfiguration
-   - Security
-   - QuartzCore
-   - OpenGLES
-   - MediaPlayer
-   - AVFoundation
-   - AudioToolbox
-   - CoreMotion
-   - CoreGraphics
-   - Foundation
-   - CoreMedia
+   ![Framework](https://user-images.githubusercontent.com/18722298/28993412-5de842f0-79d3-11e7-8f58-d3443ce05efd.png)
 9. To use the scanning controllers, just push or use “ViewController1” from the current view controller or  
 make it root view controller in AppDelegate.
 10. Please make sure that you have set proper provision profile and bundle identifier , if that fails the module will not work.
