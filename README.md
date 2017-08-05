@@ -17,7 +17,7 @@ To change database access-keys:
    - Open "CloudRecoViewController.mm" and change the following lines containing "kAccessKey" and "kSecretKey".
 
 To change the liscense-key:
-   - Open "SampleApplicationSession.mm" and change the key in the line containing "mVuforiaInitFlags" keyword. 
+   - Open "SampleApplicationSession.mm" and add the key where "Insert key here" is written. 
    
 For label changes:
 1. Open the localizable.strings file.
