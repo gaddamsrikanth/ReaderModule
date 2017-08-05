@@ -3,7 +3,7 @@ Steps for reader module integration:
 2. Drag an drop the reader module folder into the Xcode navigator pane where your project-name.xcodeproj is situated.
 3. Select “copy items if needed” and “group folder” option from the popup.
 4. Create bridging header to import the wrapper class.
-5. In the bridging header file import “CVWrapper.h” file.
+5. In the bridging header file `#import "CVWrapper.h"`file.
 6. Make sure you specify the proper path of bridging header in build settings.
 7. Set “Enable Bitcode” option as No in build settings.
 8. Add the following frameworks(Target->General->Linked frameworks and libraries):- 
