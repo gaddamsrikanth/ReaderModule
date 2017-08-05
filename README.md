@@ -14,7 +14,7 @@ make it root view controller in AppDelegate.
 11. Add “NSCameraUsageDescription” property in the info.plist file for camera access or else the app will crash.
 
 To change database access-keys:
-   - Open "CloudRecoViewController.mm" and change the following lines containing "kAccessKey" and "kSecretKey".
+   - Open "CloudRecoViewController.mm" and change the following lines containing "Access key" and "Secret key".
 
 To change the liscense-key:
    - Open "SampleApplicationSession.mm" and add the key where "Insert key here" is written. 
